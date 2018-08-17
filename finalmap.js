@@ -1,10 +1,10 @@
-var map = L.map('mapid').setView([40.7128, -74], 13);
+
+var map = L.map('mapid', {
+    center:[40.7128, -74],
+    zoom: 14
+});
 var latitude;
 var longitude;
-
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
 
 function zoomTo() {
   for (var i = 0; i < coordinate.length; i++){
@@ -17,5 +17,13 @@ function zoomTo() {
   lat = latitude;
   lng = longitude;
   map.setView(new L.LatLng(lat, lng));
-  L.layerGroup.wikipediaLayer({ target: '_blank', popupOnMouseover: true, limit: 50, }).addTo(map);
 }
+
+
+// Add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Add a Wikipedia layer
+L.layerGroup.wikipediaLayer({ target: '_blank', images: 'https://cdn.rawgit.com/MatthewBarker/leaflet-wikipedia/master/build/images' }).addTo(map);
