@@ -32,13 +32,14 @@ function Get(yourUrl){
       }
     }
   //console.log(newStr)
-  return (newStr);
-}
-  var item = Get("https://www.poemist.com/api/v1/randompoems");
-  //console.log(item)
-  var object = JSON.parse(item)
+  // return (newStr);
+  var object = JSON.parse(newStr)
   document.getElementById("title").innerHTML = object.title;
   document.getElementById("content").innerHTML = object.content;
+}
+  Get("https://www.poemist.com/api/v1/randompoems");
+  //console.log(item)
+
 
  // var  item = JSON.stringify(item);
 
