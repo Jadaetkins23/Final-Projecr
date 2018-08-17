@@ -1,4 +1,4 @@
-var map = L.map('mapid').setView([51.505, -0.09], 13);
+var map = L.map('mapid').setView([40.7128, -74], 13);
 var latitude;
 var longitude;
 
@@ -16,5 +16,6 @@ function zoomTo() {
     }
   lat = latitude;
   lng = longitude;
-  map.panTo(new L.LatLng(lat, lng));
+  map.setView(new L.LatLng(lat, lng));
+  L.layerGroup.wikipediaLayer({ target: '_blank', popupOnMouseover: true, limit: 50, }).addTo(map);
 }
