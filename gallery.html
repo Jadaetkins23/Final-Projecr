@@ -5,6 +5,9 @@
   <h1> <center> Art Gallery </center> </h1>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="mainstyle.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <link href="mainstyle.css" rel="stylesheet" type="text/css">
@@ -26,7 +29,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -38,8 +41,8 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); */
 }
 /* Caption text */
 .text {
@@ -97,12 +100,12 @@ img {vertical-align: middle;}
 <body>
 
   <ul class="nav">
-    <li><a href="homePage.html">Home</a></li>
-    <li><a href="prompts.html">Prompts</a></li>
-    <li><a href="visionary_map.html">Events Near Me</a></li>
-    <li><a href="poem.html">Poems</a></li>
-    <li><a href="gallery.html">Artwork</a></li>
-    <li><a href="visionary_about.html">About Us</a></li>
+    <li><a href="homePage.html"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="prompts.html"><i class="fa fa-pencil"></i>Prompts</a></li>
+    <li><a href="vi.html"><i class="fa fa-map-marker"></i>Inspiration Map</a></li>
+    <li><a href="poem.html"><i class="fa fa-pencil-square-o"></i>Poems</a></li>
+    <li><a href="gallery.html"><i class="fa fa-paint-brush"></i>Artwork</a></li>
+    <li><a href="visionary_about.html"><i class="fa fa-users"></i>About Us</a></li>
   </ul>
 
 <div class="slideshow-container">
@@ -275,6 +278,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-<center> <h3> <a href = "art.html"> Back to Top </a> </h3> </center>
+<!-- <center> <h3> <a href = "art.html"> Back to Top </a> </h3> </center> -->
 </body>
 </html>
