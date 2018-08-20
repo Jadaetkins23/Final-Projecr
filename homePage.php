@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,7 @@
     <li><a href="poem.html"><i class="fa fa-pencil-square-o"></i> Poems</a></li>
     <li><a href="gallery.html"><i class="fa fa-paint-brush"></i> Artwork</a></li>
     <li><a href="visionary_about.html"><i class="fa fa-users"></i> About Us</a></li>
-    <li><a href="index.php"></i> Login/Profile</a></li>
-    <li><a href= "Forums.html"></i> Writing Forums</a></li>
+  </ul>
 
   <div id="section">
     <center>
@@ -27,8 +26,6 @@
     <img id="image" src="finalfinal.png"></img>
     <center>
   </div>
-
-
 
 
 
