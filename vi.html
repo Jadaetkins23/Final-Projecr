@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
     <link href="mainstyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
-    <style>
-        #mapid {height: 500px;}
-    </style>
 </head>
 
 <body>
+  <center>
+    <p></p>
+    <h1 id="header">Visionary</h1>
   <ul class="nav">
     <li><a href="homePage.html"><i class="fa fa-home"></i> Home</a></li>
     <li><a href="prompts.html"><i class="fa fa-pencil"></i> Prompts</a></li>
@@ -19,11 +20,14 @@
     <li><a href="gallery.html"><i class="fa fa-paint-brush"></i> Artwork</a></li>
     <li><a href="visionary_about.html"><i class="fa fa-users"></i> About Us</a></li>
   </ul>
+  <p></p>
     Zip Code: <input type = "text" name = "zip" id="zip"/>
-    <input type="button" onclick="zoomTo()" value="Enter"/>
+    <input id="buttonmap" type="button" onclick="zoomTo()" value="Enter"/>
+    <p></p>
     <div id="mapid"></div>
     <script src="https://cdn.rawgit.com/MatthewBarker/leaflet-wikipedia/master/example/bundle.js"></script>
     <script type="text/javascript" src="coordinates.js"></script>
     <script type="text/javascript" src="finalmap.js"></script>
+  </center>
 </body>
 </html>
