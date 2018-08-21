@@ -1,227 +1,128 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<!--   <h1> <center> Art Gallery </center> </h1> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="mainstyle.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
-<link href="mainstyle.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="mainstyle.css" rel="stylesheet" type="text/css">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    /* Create three equal columns that sits next to each other */
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+        width: 25%;
+        overflow-wrap: break-word;
+    }
+    </style>
 </head>
-<style>
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: coral;
-}
-</style>
-
 <body>
   <center>
-<h1 id="header">Visionary</h1>
-</center>
-<ul class="nav">
-  <li><a href="homePage.html"><i class="fa fa-home"></i> home</a></li>
-  <li><a href="prompts.html"><i class="fa fa-pencil"></i> prompts</a></li>
-  <li><a href="vi.html"><i class="fa fa-map-marker"></i> inspiration map</a></li>
-  <li><a href="poem.html"><i class="fa fa-pencil-square-o"></i> poems</a></li>
-  <li><a href="gallery.html"><i class="fa fa-paint-brush"></i> artwork</a></li>
-  <li><a href="visionary_about.html"><i class="fa fa-users"></i> about us</a></li>
-</ul>
-<br>
-<div class="slideshow-container">
+  <ul class="nav">
+    <li><a href="homePage.html"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="prompts.html"><i class="fa fa-pencil"></i> Prompts</a></li>
+    <li><a href="vi.html"><i class="fa fa-map-marker"></i> Inspiration Map</a></li>
+    <li><a href="poem.html"><i class="fa fa-pencil-square-o"></i> Poems</a></li>
+    <li><a href="gallery.html"><i class="fa fa-paint-brush"></i> Artwork</a></li>
+    <li><a href="visionary_about.html"><i class="fa fa-users"></i> About Us</a></li>
+  </ul>
+  <br>
+  <h1>The Creators</h1>
+  <br>
+  <section id="two" class="wrapper style1 special">
+    <div class="inner">
+      <!-- <header>
+        <h2>Ipsum Feugiat</h2>
+        <p>Semper suscipit posuere apede</p>
+      </header> -->
+      <div class="row">
+        <div class="column">
+            <img src="tal2223.jpg" width=200 height=200 alt="Person 1" />
+                <p><b>Tal Gaon</b></p>
+                <p>Tal Gaon is sixteen years old. Her hobbies include drawing and writing, she enjoys fangirling over Kpop and k-dramas, as well as broadway shows</p>
+          </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 20</div>
-  <center> <img src="girl1.JPG" width=400 height=550 > </center>
-  <div class="text"></div>
-</div>
+          <!-- <p>words</p> -->
+        <div class="column">
+            <img src="kumud23.jpg" width=200 height=200  alt="Person 2" />
+              <p><b>Kumud Joshi</b></p>
+              <p>Kumud is </p>
+          </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 20</div>
-  <center> <img src="girl2.JPG" width=400 height=550> </center>
-  <div class="text"></div>
-</div>
+          <!-- <p>words</p> -->
+        <div class="column">
+            <img src="jadaa23.jpg" width=200 height=200 alt="Person 3" />
+            <p><b>Jada Etkins</b></p>
+            <p>Jada is a rising junior at Benjamin N. Cardozo High School. She is interested in persuing computer science in her future studies.</p>
+          </div>
+          <!-- <p>words</p> -->
+        <div class="column">
+            <img src="tiffany752.jpg" width=200 height=200 alt="Person 4" />
+            <p><b>Tiffany Brandon</b></p>
+            <p>Tiffany is a rising senior in highschool and has been programming since seventh grade. She enjoys playing basketball, traveling around the city for new popular food, and writing poetry.</p>
+          </div>
+          <!-- <p>words</p> -->
+    </div>
+  </section>
+<!--
+  <img src="tal23.jpg" alt="Tal Gaon" width="300" height="320" align="left"> <p align="left"><font size="4">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</font></p>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 20</div>
-  <center> <img src="girl3.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
+  <img src="kumud23.jpg" alt="Kumud Joshi" width="300" height="320" align="right"><p align="left"><font size="4"> This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</font></p>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 20</div>
-  <center> <img src="heart.JPG" width=400 height=550> </center>
-  <div class="text"></div>
-</div>
+  <img src="jada.jpg" alt="Jada Etkins" width="300" height="320" align="left"> <p align="left"><font size="4">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</font></p>
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 20</div>
-  <center> <img src="hand2.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
+  <img src="tiffany1234.jpg" alt="Tiffany Brandon" width="300" height="320" align="right"> <p align="left"><font size="4">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</font></p> -->
 
-<div class="mySlides fade">
-  <div class="numbertext">6 / 20</div>
-  <center> <img src="girl6.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">7 / 20</div>
-  <center> <img src="globe.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">8 / 20</div>
-  <center> <img src="girl4.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">9 / 20</div>
-  <center> <img src="light.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">10 / 20</div>
-  <center> <img src="hand1.JPG"  width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">11 / 20</div>
-  <center> <img src="girl5.JPG" width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">12 / 20</div>
-  <center> <img src=https://i.pinimg.com/originals/d8/a3/fc/d8a3fcdd6be8e4f20815f316c386463e.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">13 / 20</div>
-  <center> <img src=https://i.pinimg.com/originals/24/2a/40/242a4019d33a11796634e5f1fd0e559e.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">14 / 20</div>
-  <center> <img src=https://i.pinimg.com/originals/88/0a/97/880a9754c4264141abf698e95a99bbe8.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">15 / 20</div>
-  <center> <img src=http://www.humideas.com/wp-content/uploads/27-cool-drawings-that-can-not-only-speak/painted-images-cool-drawings.png width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">16 / 20</div>
-  <center> <img src=http://dont-touch.me/wp-content/uploads/2018/04/awesome-drawing-ideas-art-drawings-pinterest-best-25-cool-drawings-ideas-on-pinterest-ideas.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">17 / 20</div>
-  <center> <img src=https://i.pinimg.com/originals/35/f5/9c/35f59c63ade5522d7aa215e6962589a1.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">18/ 20</div>
-  <center> <img src=https://img00.deviantart.net/f6b1/i/2013/097/a/b/girl_with_headphones_by_jane_slash-d60s6bx.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">19 / 20</div>
-  <center> <img src=http://lanavidad.info/wp-content/uploads/2018/05/cooldrawing-good-drawing-ideas-cool-drawing-ideas-25-awesome-arts-for-ideas.jpg width=400 height=550> </center>
-  <div class="text"></div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
-  <span class="dot" onclick="currentSlide(11)"></span>
-  <span class="dot" onclick="currentSlide(12)"></span>
-  <span class="dot" onclick="currentSlide(13)"></span>
-  <span class="dot" onclick="currentSlide(14)"></span>
-  <span class="dot" onclick="currentSlide(15)"></span>
-  <span class="dot" onclick="currentSlide(16)"></span>
-  <span class="dot" onclick="currentSlide(17)"></span>
-  <span class="dot" onclick="currentSlide(18)"></span>
-  <span class="dot" onclick="currentSlide(19)"></span>
-
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-<!-- <center> <h3> <a href = "art.html"> Back to Top </a> </h3> </center> -->
+<!--
+  <section id="two" class="wrapper style1 special">
+    <div class="inner">
+      <header>
+        <h2>Ipsum Feugiat</h2>
+        <p>Semper suscipit posuere apede</p>
+      </header>
+      <div class="flex flex-4">
+        <div class="box person">
+          <div class="image round">
+            <img src="tal23.jpg" alt="Person 1" />
+          </div>
+          <h3>Magna</h3>
+          <p>Cipdum dolor</p>
+        </div>
+        <div class="box person">
+          <div class="image round">
+            <img src="kumud23.jpg" alt="Person 2" />
+          </div>
+          <h3>Ipsum</h3>
+          <p>Vestibulum comm</p>
+        </div>
+        <div class="box person">
+          <div class="image round">
+            <img src="jada.jpg" alt="Person 3" />
+          </div>
+          <h3>Tempus</h3>
+          <p>Fusce pellentes</p>
+        </div>
+        <div class="box person">
+          <div class="image round">
+            <img src="tiffany1234.jpg" alt="Person 4" />
+          </div>
+          <h3>Dolore</h3>
+          <p>Praesent placer</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 </body>
 </html>
