@@ -188,10 +188,23 @@ body {
   letter-spacing: 80px;
   font-size: 42px;
   padding-top: 10px;
-
 }
+
+#forum{
+  height: 600px;
+  width: 1000px;
+}
+
+#head{
+  font-family: "Bebas Neue";
+  font-weight: 200;
+  align: center;
+  font-size: 42px;
+  padding-top: 10px;
+}
+
 #mapid {
-  height: 800px;
+  height: 400px;
   width: 1000px;
 }
 
@@ -229,6 +242,12 @@ body {
 
 }
 
+#howto{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
 #buttonlogin{
   background-color: #FFFFFF;
   color: grey;
@@ -247,4 +266,29 @@ body {
 #footer{
   padding: 50px;
 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#gangnambeauty{
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 36px;
+  letter-spacing: 10px;
+
+}
+
+.row {
+    display: flex;
+}
+
+
+.column {
+    font-family: "Raleway";
+    flex: 33.33%;
+    padding: 5px;
+    width: 25%;
+    overflow-wrap: break-word;
 }
