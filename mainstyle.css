@@ -157,7 +157,7 @@ body {
 }
 
 #mainSection{
-  -webkit-animation: fadein 2s;
+  -webkit-animation: fadein 5s;
   font-family: "Open Sans";
   font-size: 100px;
   font-weight: 300;
@@ -213,7 +213,36 @@ body {
 
 }
 
+#buttonprompt{
+  background-color: #FFFFFF;
+  color: grey;
+  padding: 4px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: grey;
+  border-width: thin;
+  border-radius: 6px;
 
+}
+
+#buttonlogin{
+  background-color: #FFFFFF;
+  color: grey;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: grey;
+  border-width: thin;
+  border-radius: 8px;
+
+}
 
 #footer{
   padding: 50px;
